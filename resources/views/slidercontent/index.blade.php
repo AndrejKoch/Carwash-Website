@@ -42,7 +42,7 @@
 
                                     <td>
                                         <a  class="btn btn-warning pull-left" style="margin-top: 6px" href="{{ url('/slidercontent', [$slidercontent->id, 'edit']) }}">Edit</a>
-                                        <form action="{{ url('$slidercontent', [$slidercontent->id]) }}" method="POST">
+                                        <form action="{{ url('/slidercontent', [$slidercontent->id]) }}" method="POST">
                                             {{ csrf_field() }}
                                             {{method_field('DELETE')}}
                                             <button type="submit" class="btn btn-danger">Delete</button>

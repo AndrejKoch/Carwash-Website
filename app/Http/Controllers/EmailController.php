@@ -21,7 +21,6 @@ class EmailController extends Controller
         $data = $request->all();
         $errors = Validator::make($data, [
             'name' => 'required',
-            'email' => 'required|email',
             'subject' => 'required',
             'phone'   => 'required',
             'message' => 'required',

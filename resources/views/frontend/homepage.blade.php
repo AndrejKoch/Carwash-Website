@@ -14,65 +14,68 @@
                         <!-- ================ -->
 
                         @foreach($sliders as $slider)
-                        <li class="text-center" data-transition="random" data-slotamount="default"
-                            data-masterspeed="default" data-title="">
+                            <li class="text-center" data-transition="random" data-slotamount="default"
+                                data-masterspeed="default" data-title="">
 
-                            <!-- main image -->
-                            <img src="/assets/img/slider/originals/{{$slider->image}}" alt="slidebg1" data-bgposition="center center"
-                                 data-bgrepeat="no-repeat" data-bgfit="cover" class="rev-slidebg">
+                                <!-- main image -->
+                                <img src="/assets/img/slider/originals/{{$slider->image}}" alt="slidebg1"
+                                     data-bgposition="center center"
+                                     data-bgrepeat="no-repeat" data-bgfit="cover" class="rev-slidebg">
 
-                            <!-- Transparent Background -->
-                            <div class="tp-caption dark-translucent-bg"
-                                 data-x="center"
-                                 data-y="center"
-                                 data-start="0"
-                                 data-transform_idle="o:1;"
-                                 data-transform_in="o:0;s:600;e:Power2.easeInOut;"
-                                 data-transform_out="o:0;s:600;"
-                                 data-width="5000"
-                                 data-height="5000">
-                            </div>
+                                <!-- Transparent Background -->
+                                <div class="tp-caption dark-translucent-bg"
+                                     data-x="center"
+                                     data-y="center"
+                                     data-start="0"
+                                     data-transform_idle="o:1;"
+                                     data-transform_in="o:0;s:600;e:Power2.easeInOut;"
+                                     data-transform_out="o:0;s:600;"
+                                     data-width="5000"
+                                     data-height="5000">
+                                </div>
 
-                            <!-- LAYER NR. 1 -->
-                            <div class="tp-caption large_white"
-                                 data-x="center"
-                                 data-y="50"
-                                 data-start="1000"
-                                 data-width="650"
-                                 data-transform_idle="o:1;"
-                                 data-transform_in="y:[100%];sX:1;sY:1;o:0;s:1150;e:Power4.easeInOut;"
-                                 data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;"
-                                 data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;"
-                                 data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;">
-                                <span class="logo-font"><h3 style="padding-top: 50px; color: #ffffff;">{{$slider->title}}</h3>
-                            </div>
+                                <!-- LAYER NR. 1 -->
+                                <div class="tp-caption large_white"
+                                     data-x="center"
+                                     data-y="50"
+                                     data-start="1000"
+                                     data-width="650"
+                                     data-transform_idle="o:1;"
+                                     data-transform_in="y:[100%];sX:1;sY:1;o:0;s:1150;e:Power4.easeInOut;"
+                                     data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;"
+                                     data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;"
+                                     data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;">
+                                <span class="logo-font"><h3
+                                        style="padding-top: 50px; color: #ffffff;">{{$slider->title}}</h3>
+                                </div>
 
-                            <!-- LAYER NR. 2 -->
-                            <div class="tp-caption large_white tp-resizeme hidden-xs"
-                                 data-x="center"
-                                 data-y="150"
-                                 data-start="1300"
-                                 data-width="500"
-                                 data-transform_idle="o:1;"
-                                 data-transform_in="o:0;s:2000;e:Power4.easeInOut;">
-                                <div class="separator light"></div>
-                            </div>
+                                <!-- LAYER NR. 2 -->
+                                <div class="tp-caption large_white tp-resizeme hidden-xs"
+                                     data-x="center"
+                                     data-y="150"
+                                     data-start="1300"
+                                     data-width="500"
+                                     data-transform_idle="o:1;"
+                                     data-transform_in="o:0;s:2000;e:Power4.easeInOut;">
+                                    <div class="separator light"></div>
+                                </div>
 
-                            <!-- LAYER NR. 3 -->
-                            <div class="tp-caption medium_white hidden-xs"
-                                 data-x="center"
-                                 data-y="190"
-                                 data-start="1300"
-                                 data-width="750"
-                                 data-transform_idle="o:1;"
-                                 data-transform_in="y:[100%];sX:1;sY:1;s:800;e:Power4.easeInOut;"
-                                 data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;"
-                                 data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
-                                 data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"><p>{{$slider->description}}</p>
-                            </div>
-                        </li>
-                        @endforeach
-                        <!-- slide 1 end -->
+                                <!-- LAYER NR. 3 -->
+                                <div class="tp-caption medium_white hidden-xs"
+                                     data-x="center"
+                                     data-y="190"
+                                     data-start="1300"
+                                     data-width="750"
+                                     data-transform_idle="o:1;"
+                                     data-transform_in="y:[100%];sX:1;sY:1;s:800;e:Power4.easeInOut;"
+                                     data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;"
+                                     data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+                                     data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;">
+                                    <p>{{$slider->description}}</p>
+                                </div>
+                            </li>
+                    @endforeach
+                    <!-- slide 1 end -->
                     </ul>
                     <div class="tp-bannertimer"></div>
                 </div>
@@ -127,7 +130,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-10 col-md-offset-1">
-                    <h1 class="text-center large">Зашто да не <strong>изберете</strong> нас <span class="text-default">КЛИП+</span>
+                    <h1 class="text-center large">Зашто да го <strong>изберете</strong> <span class="text-default">КЛИП+</span>
                     </h1>
                     <div class="separator"></div>
                     <p class="large text-center">{{ $settings->description }}
@@ -203,7 +206,8 @@
 @endsection
 
 @section('introproducts')
-    <div id="products" class="dark-translucent-bg footer-top animated-text default-hovered" style="background-color:rgba(0,0,0,0.6);">
+    <div id="products" class="dark-translucent-bg footer-top animated-text default-hovered"
+         style="background-color:rgba(0,0,0,0.6);">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -223,20 +227,21 @@
     <div class="owl-carousel carousel-autoplay">
 
         @foreach($products as $product)
-        <div class="overlay-container">
-            <img style="max-height: 200px;object-fit: cover; filter: grayscale(40%);" src="/assets/img/products/thumbnails/{{$product->image}}" alt="">
-            <div class="overlay-top">
-                <div class="text">
-                    <p>{{$product->name}}</p>
+            <div class="overlay-container">
+                <img style="max-height: 200px;object-fit: cover; filter: grayscale(40%);"
+                     src="/assets/img/products/thumbnails/{{$product->image}}" alt="">
+                <div class="overlay-top">
+                    <div class="text">
+                        <p>{{$product->name}}</p>
+                    </div>
+                </div>
+                <div class="overlay-bottom">
+                    <div class="links">
+                        <small>{{$product->description}}</small>
+                    </div>
                 </div>
             </div>
-            <div class="overlay-bottom">
-                <div class="links">
-                    <small>{{$product->description}}</small>
-                </div>
-            </div>
-        </div>
-            @endforeach
+        @endforeach
     </div>
 @endsection
 
@@ -286,34 +291,46 @@
             <div class="col-md-12 g-mb-25 g-mb-0--md">
                 <form action="/send-message" method="post">
                     {{ csrf_field() }}
-                    <div class="col-sm-6 form-group g-mb-30" >
-                        <input id="inputGroup1_1" class="form-control h-100 g-font-size-14 g-theme-bg-gray-light-v2 g-brd-none g-rounded-1 g-py-14 g-px-10" type="text" placeholder="Вашето име" name="name">
+                    <div class="col-sm-6 form-group g-mb-30">
+                        <input id="inputGroup1_1"
+                               class="form-control h-100 g-font-size-14 g-theme-bg-gray-light-v2 g-brd-none g-rounded-1 g-py-14 g-px-10"
+                               type="text" placeholder="Вашето име" name="name">
                     </div>
 
                     <div class="col-sm-6 form-group g-mb-30">
-                        <input id="inputGroup1_2" class="form-control h-100 g-font-size-14 g-theme-bg-gray-light-v2 g-brd-none g-rounded-1 g-py-14 g-px-10" type="tel" placeholder="Мобилен телефон" name="phone">
+                        <input id="inputGroup1_2"
+                               class="form-control h-100 g-font-size-14 g-theme-bg-gray-light-v2 g-brd-none g-rounded-1 g-py-14 g-px-10"
+                               type="tel" placeholder="Мобилен телефон" name="phone">
                     </div>
+
 
                     <div class="col-sm-6 form-group g-mb-30">
-                        <input id="inputGroup1_3" class="form-control h-100 g-font-size-14 g-theme-bg-gray-light-v2 g-brd-none g-rounded-1 g-py-14 g-px-10" type="email" placeholder="E-mail" name="email">
+                        <input id="inputGroup1_4"
+                               class="form-control h-100 g-font-size-14 g-theme-bg-gray-light-v2 g-brd-none g-rounded-1 g-py-14 g-px-10"
+                               placeholder="Датум и време (01.04.2021 16.30h)" name="subject">
                     </div>
+
 
                     <div class="col-sm-6 form-group g-mb-30">
-                        <input id="inputGroup1_4" class="form-control h-100 g-font-size-14 g-theme-bg-gray-light-v2 g-brd-none g-rounded-1 g-py-14 g-px-10" type="datetime-local" placeholder="Датум и време" name="subject">
+                        <select class="form-group" name="message" style="width: 100%; height: 38px;"
+                                value="">
+                            <option value="">Избери тип на услуга</option>
+                            @foreach($services as $service)
+                                <option value="{{ $service->name }}">{{ $service->name }} - {{ $service->price }}</option>
+                            @endforeach
+                        </select>
+                        <p style="font-size: 12px;">*Цената на некои услуги зависи од големината на возилото</p>
                     </div>
-
-                    <div class="col-sm-12 form-group g-mb-30">
-                        <input id="inputGroup1_5" class="form-control h-100 g-font-size-14 g-theme-bg-gray-light-v2 g-brd-none g-rounded-1 g-py-14 g-px-10" type="text" placeholder="Тип на услуга" name="message">
-                    </div>
-
-                    <div class="text-center">
-                        <button
-                            class="btn u-btn-primary btn-md text-uppercase g-line-height-1 g-font-weight-700 g-font-size-11 rounded-0 g-py-12 g-px-25 mb-0"
-                            type="submit" role="button">Закажи!
-                        </button>
+                    <div class="col-sm-12">
+                        <div class="text-center">
+                            <button
+                                class="btn u-btn-primary btn-md text-uppercase g-line-height-1 g-font-weight-700 g-font-size-11 rounded-0 g-py-12 g-px-25 mb-0"
+                                type="submit" role="button">Закажи!
+                            </button>
+                        </div>
                     </div>
                 </form>
             </div>
         </div>
     </div>
-    @endsection
+@endsection

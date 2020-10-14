@@ -188,11 +188,15 @@
                                                 <li class="nav-item g-mx-30--lg g-mb-7 g-mb-0--lg">
                                                     <a href="#products" class="nav-link p-0">Продукти</a>
                                                 </li>
+                                                <li class="nav-item g-mx-30--lg g-mb-7 g-mb-0--lg">
+                                                    <a href="#footer" class="nav-link p-0">Закажи</a>
+                                                </li>
                                                 <!-- header buttons -->
                                                 <div class="header-dropdown-buttons">
                                                     <!-- ahref?-->
                                                 </div>
                                                 <!-- header buttons end-->
+                                            </ul>
 
                                         </div>
 
@@ -288,10 +292,11 @@
                 </div>
             </div>
         </div>
+    </footer>
+
 </div>
 <!-- .footer end -->
 
-</footer>
 <!-- footer end -->
 
 </div>

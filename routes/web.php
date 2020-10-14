@@ -25,7 +25,6 @@ Route::group(['middleware' => ['web', 'auth', 'check.user:Admin']], function () 
         Route::resource('/slidercontent', 'SliderContentController');
         Route::resource('/products', 'ProductController');
         Route::resource('/user', 'UserController');
-
     };
 });
 

@@ -50,7 +50,7 @@
                                     <td>
 
                                         <a  class="btn btn-warning pull-left" style="margin-top: 6px" href="{{ url('/introcards', [$introcard->id, 'edit']) }}">Edit</a>
-                                        <form action="{{ url('/introcard', [$introcard->id]) }}" method="post">
+                                        <form action="{{ url('/introcards', [$introcard->id]) }}" method="post">
                                             {{ csrf_field() }}
                                             {{ method_field('DELETE') }}
 

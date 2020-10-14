@@ -118,7 +118,7 @@ class IntroCardsController extends Controller
     public function destroy($id)
     {
         $introcards = IntroCards::FindOrFail($id);
-        $introcards->delete;
+        $introcards->delete();
         Session::flash('flash_message', 'Intro Card successfully deleted!');
         return redirect()->back();
     }

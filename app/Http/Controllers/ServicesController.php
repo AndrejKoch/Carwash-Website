@@ -141,7 +141,8 @@ class ServicesController extends Controller
         $services->delete();
 
         Session::flash('flash_message', 'Service successfully deleted!');
-        return redirect()->back();    }
+        return redirect()->back();
+    }
 
 
     public function imageStore(Request $request)

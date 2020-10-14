@@ -32,7 +32,7 @@ class Contact extends Mailable
     public function build()
     {
         return $this->view('mail.contact')->with(['data' => $this->data,])
-            ->from($this->data['email'], $this->data['name'])
+            ->from(('klip@contact'), $this->data['name'])
             ->subject($this->data['title']);
     }
 }
