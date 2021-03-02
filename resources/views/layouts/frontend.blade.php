@@ -338,7 +338,7 @@
 
 <!-- Google Maps javascript -->
 <script type="text/javascript"
-        src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;key=AIzaSyBgqGqpGPtQUqx48lRRdbTQ8lKoxmNdVDA"></script>
+        src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;key="></script>
 <script type="text/javascript" src="/frontend/js/google.map.config.js"></script>
 
 </body>
